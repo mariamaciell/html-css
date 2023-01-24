@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*fonts do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+@font-face {
+    font-family: 'kooltura';
+    src: url('fontes/kooltura.otf'); format:('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #F2CB9B, #D9A282);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #261914;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    font-family: 'Comfortaa',arial,helvetica,sans-serif;
+    color: #F27C38;
+    text-align: center;
+    text-shadow: 1px 1px 2px #592512;
+}
+
+h2{
+    font-family:'kooltura';
+    color: #592512;
+}
+p{
+    text-align: justify;
+}
+
+.css{
+    background-color: rgb(54, 122, 122);
+}
+
+#destaque{
+    background-color: #F27C38;
+}
+
+#importante{
+    background-color: green;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: #592512;
+    width: 300px;
+}
+
+div:hover{
+    color: #F27C38;
+}
+
+a{
+    color: #592512;
+}
+                   /* ESSA MERDA NAO ESTA FUNCIONANDO*/
+a:visited{
+    color: #ff4800;
+}

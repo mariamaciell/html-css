@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <picture>
+        <source media="(max-width:720px )" srcset="imagem/img-p.jpg" type="image/jpg">
+        <source media="(max-width:1020px)" srcset="imagem/img-m.jpg" type="image/jpg">
+        <img src="imagem/img-g.jpg" alt="imagem flexivel">
+    </picture>
+    <hr>
+    <h1>AUDIO</h1>
+    <p>Aqui vai produzir audio</p>
+    <audio src="midia/o-holy-night-dj-williams.mp3" controls></audio>
+    <!--PARA QUANDO TIVER OUTROS FORMATOS DE AUDIO MP3 OGG  WAV muito pesado-->
+    <p>Esse é o teste com o source</p>
+    <audio preload="metadata" controls loop> 
+        <source src="midia/o-holy-night-dj-williams.mp3" type="audio/mpeg">
+        <source src="midia/o-holy-night-dj-williams.ogg" type="audio/ogg">
+        <source src="midia/o-holy-night-dj-williams.wav" type="audio/wav">
+        <p>Seu navegador não tem compatibilidade com reprodução de audio</p>
+        <!--ESSA É A ORDEM QUE ELE VAI TENTAR CARREGAR-->
+    </audio>
+    <hr>
+    <h1>VIDEOS</h1>
+    <h2>Videos hospedados localmente/ prorio servidor </h2>
+    <p>Handbrake é um app para converter formatos de video.</p>
+    <p>Usar video no site faz ele consumir muito trafego de dados, fazendo ficar mais caro pro cliente</p>
+    
+   <video src="midia/mar.mp4" poster="imagem/capa-mar.jpg" width="600px" controls loop></video>
+    <p>Teste com o source</p>
+   <video poster="imagem/capa-mar.jpg" width="600" controls loop>
+     <source src="midia/mar.mp4" type="video/mp4">
+      <source src="midia/mar.m4v" type="video/mp4">
+      <source src="midia/mar.webm" type="video/   webm">
+     <source src="midia/mar.ogv" type="video/ogg">
+     <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+   </video>
+   <h2>Video com hospedade propria</h2>
+   <p>O cliente posta no youtube o video, mas se ele quer deixar o video privado tem o Vimeo que é uma plataforma que permite isso, e o Vimeo tem uma possibilidade de configurações</p>
+   <iframe width="600" height="315" src="https://www.youtube.com/embed/P7Cz2IPe5J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

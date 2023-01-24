@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+
+body{            /* DA PARA COLOCAR TO RIGTH/LEFT AO INVES DO DEG QUE É GRAUS */
+    background-image: linear-gradient(90deg, #BED9FD,#95C5FE,#7AA0CF);
+}
