@@ -42,7 +42,7 @@ header {
     min-width: 150px;
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 40px; /*teste*/
     height: 150px;
 }
 
